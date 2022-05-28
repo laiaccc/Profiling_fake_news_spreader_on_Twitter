@@ -1,24 +1,22 @@
-Profiling fake news spreaders from twitter
-The programmes here aimed at traning various meachine learning models such as AdaBoost, Random Forest, Logistic Regression and Support Vector Machines.
-The file features.py contains the dataframe of 18 artifitially generated features from the dataset.
+# Profiling fake news spreaders from twitter
+Nowadays, huge amounts of news posts on social media are making it increasingly important to identify fake news from real news, as billions of people experience news and events from social media platforms like twitter. We have used various supervised learning methods like AdaBoost, Logistic Regression, Random forest, and Support Vector Machines (SVM) on the data to differentiate fake news spreaders from non fake news spreaders. For our machine learning models, we have artificially generated 22 features based on our linguistic and common sense knowledge, and we also have used a long short-term memory-based (LSTM) neural network to extract more features. With only artificially generated features, we achieved an accuracy of 0.66 using linear SVM, and a 0.63 accuracy using Random Forest classifier. However, after including the features extracted by LSTM-based network, we achieved an accuracy of 1.0 in all of our machine learning models. 
 
+## Prerequisites:
+pip install spaCy package in Python, version 2.2.4  
+pip install a spaCy English module in Python, en_core_web_sm, version 2.2.5  
+pip install lexical-diversity module in Python, version 0.1.1  
+pip install textblob package in Python, version 0.15.3  
 
-Prerequisites:
-pip install spaCy package in Python, version 2.2.4
-pip install a spaCy English module in Python, en_core_web_sm, version 2.2.5
-pip install lexical-diversity module in Python, version 0.1.1
-pip install textblob package in Python, version 0.15.3
+## Python modules used:
+- regex 2.2.1
+- numpy  1.18.1
+- pandas 1.0.0
+- nltk 3.4.4
+- nltk stopwords dictionary: english
+- keras 2.3.1
 
-Python modules used:
-regex 2.2.1
-numpy  1.18.1
-pandas 1.0.0
-nltk 3.4.4
-nltk stopwords dictionary: english
-keras 2.3.1
-
-Python version:
+## Python version:
 Python 3.7.6
 
-LSTM:
+## LSTM:
 Running on Google colab
